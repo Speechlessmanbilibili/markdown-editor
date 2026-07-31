@@ -1,6 +1,6 @@
 # 📝 Markdown Editor Pro
 
-一个功能丰富的在线 Markdown 编辑器，支持 Word / PDF 导入导出、实时预览、深色/浅色主题，采用 Apple Liquid Glass 设计风格。
+一个功能丰富的在线 Markdown 编辑器，支持 Word / PDF 导入导出、实时预览、深色/浅色主题。
 
 ## ✨ 功能
 
@@ -12,7 +12,6 @@
 - **📋 大纲导航** — 自动生成文档大纲，点击跳转
 - **🔍 查找替换** — 支持 Ctrl+F 查找、逐个替换和全部替换
 - **⌨️ 快捷键** — Ctrl+B 粗体、Ctrl+I 斜体、Ctrl+K 链接、Ctrl+S 保存等
-- **💎 液态玻璃设计** — 基于 SVG 滤镜的 Apple Liquid Glass 视觉效果，鼠标跟踪视差光球
 
 ## 🚀 快速开始
 
@@ -57,7 +56,7 @@ npm start
 ## 🛠 技术栈
 
 - **后端** — Express + Multer + Mammoth + pdf-parse + Marked
-- **前端** — 原生 JavaScript + SVG 滤镜（液态玻璃效果）
+- **前端** — 原生 JavaScript + CSS 动画
 - **样式** — CSS Custom Properties + 暗色主题变量
 - **文件转换** — Word (.docx) 通过 mammoth 保留标题/样式映射
 
@@ -69,10 +68,9 @@ markdown-editor/
 ├── package.json
 ├── public/
 │   ├── index.html         # 编辑器主页面
-│   ├── css/style.css      # 样式（含液态玻璃设计系统）
+│   ├── css/style.css      # 样式
 │   └── js/
 │       ├── app.js         # 前端应用逻辑
-│       └── liquid-glass-fx.js  # SVG 滤镜 + 视差光球
 ├── saves/                 # 文档保存目录（本地存储）
 ├── 启动编辑器.bat           # Windows 一键启动
 └── 关闭编辑器.bat           # Windows 关闭服务
